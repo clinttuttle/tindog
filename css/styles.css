@@ -4,13 +4,16 @@ body {
   margin: 0px;
 }
 
-#title {
-  background-color: #ff4c68;
-  height: 600px;
-    margin: 0px;
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.25rem;
+  line-height: 1.5;
+  color: white;
+  text-shadow: 1px 1px gray;
 }
 
-/* Navigation Bar */
+
+/***************** Navigation Bar *****************/
 .navbar {
   padding-bottom: 2.5rem;
   padding-left: 0px;
@@ -33,20 +36,21 @@ body {
   text-shadow: 1px 1px gray;
 }
 
-/* Title Container */
+
+
+/***************** Title Section  *****************/
+#title {
+  background-color: #ff4c68;
+  height: 600px;
+  margin: 0px;
+}
+
+/*Title Container */
 .container-fluid {
   padding-top: 3%;
   padding-bottom: 3%;
   padding-left: 15%;
   padding-right: 15%;
-}
-
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.25rem;
-  line-height: 1.5;
-  color: white;
-  text-shadow: 1px 1px gray;
 }
 
 .iphone-pic {
@@ -63,7 +67,9 @@ h1 {
   margin-right: .5rem;
 }
 
-/* Feature section */
+
+
+/***************** Feature section *****************/
 #features {
   background-color: white;
   border-width: 1px;
@@ -100,7 +106,9 @@ h1 {
   color: #ff4c68;
 }
 
-/* Testimonials */
+
+
+/***************** Testimonials Section *****************/
 #testimonials {
   background-color: #ff4c68;
   text-align: center;
@@ -125,7 +133,9 @@ h1 {
   padding: 4% 15%;
 }
 
-/* Press */
+
+
+/***************** Press Section *****************/
 #press {
   background-color: #ff4c68;
   text-align: center;
@@ -137,24 +147,81 @@ h1 {
   margin: 20px 20px 20px 50px;
 }
 
-/* Pricing */
+
+
+
+/***************** Pricing Section *****************/
 #pricing {
   background-color: white;
   padding: 4% 15%;
 }
 
-/* Call to Action */
+
+
+/***************** Call to Action Section *****************/
 #cta {
-  padding: 4% 15%;
+  padding: 7% 20%;
 }
 
-/* Footer */
+#cta h3 {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+}
+
+.cta-buttons {
+  text-align:center;
+}
+
+.download-button-cta {
+  margin: 1rem 1rem;
+}
+
+
+
+/***************** Footer *****************/
 #footer {
   background-color: #343A40;
   padding: 4% 10% 3% 10%;
 }
 
 .copyright-text {
-  color:white;
+  color: white;
   text-align: center;
+}
+
+.social-icons {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+
+/***************** Media Point for mobile *****************/
+
+@media (max-width: 1028px) {
+  .iphone-pic {
+    position: static;
+    transform: rotate(0);
+    margin: 2rem auto;
+  }
+
+  #features {
+    position: relative;
+    z-index: 0;
+  }
+
+  #title {
+    background-color: #ff4c68;
+    height: 900px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  #pricing {
+    position: relative;
+  }
 }
